@@ -20,10 +20,17 @@ import { REPOSITORY_URL } from '../consts';
 </footer>
 <style>
 	footer {
-		padding: 2em 1em 6em 1em;
-		background: rgba(248, 226, 185, 0.5);
-		color: rgb(var(--gray));
+		padding: 3em 1em;
+		background: linear-gradient(135deg, rgba(255, 244, 230, 0.9) 0%, rgba(248, 226, 185, 0.8) 100%);
+		color: rgb(var(--gray-dark));
 		text-align: center;
+		box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+		backdrop-filter: blur(10px);
+		margin-top: 3em;
+	}
+	footer p {
+		font-size: 1em;
+		margin-bottom: 0.5em;
 	}
 	.social-links {
 		display: flex;
@@ -33,9 +40,11 @@ import { REPOSITORY_URL } from '../consts';
 	}
 	.social-links a {
 		text-decoration: none;
-		color: rgb(var(--gray));
+		color: rgb(var(--gray-dark));
+		transition: all 0.3s ease;
 	}
 	.social-links a:hover {
-		color: rgb(var(--gray-dark));
+		color: var(--accent);
+		transform: translateY(-3px);
 	}
 </style>

@@ -10,17 +10,55 @@ import AboutHeroImage from '../assets/blog-placeholder-about.jpg';
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			h1 {
+				text-align: center;
+				margin: 1em 0 0.5em 0;
+				color: var(--accent-dark);
+			}
+			em {
+				display: block;
+				text-align: center;
+				font-size: 1.2em;
+				color: rgb(var(--gray-dark));
+				margin-bottom: 2em;
+			}
+			h3 {
+				margin-top: 2em;
+				color: var(--accent);
+			}
+			h5 {
+				color: var(--accent-dark);
+			}
+			.cta-section {
+				background: linear-gradient(135deg, rgba(236, 55, 80, 0.1) 0%, rgba(255, 107, 129, 0.1) 100%);
+				padding: 2em;
+				border-radius: 15px;
+				margin: 2em 0;
+				text-align: center;
+				box-shadow: var(--card-shadow);
+			}
+			.form-container {
+				margin: 3em 0;
+				padding: 2em;
+				background: white;
+				border-radius: 15px;
+				box-shadow: var(--card-shadow);
+			}
+		</style>
 	</head>
 	<body>
 		<Header />
 		<main>
-			<h1 style="display:inline-block; white-space:nowrap; margin-left:-12px; margin-right:-12px;">Build Your Own Workshop!</h1>
+			<h1>Build Your Own Workshop!</h1>
 			<em>Get your members and other clubs around the world shipping more projects!</em>
 			<img src="/workshop-image.png" alt="Image of a workshop" />
 
 			<h3>Ever wanted to...</h3>
-				<b style="text-align:center;">Create your own ysws? Get more flexibility? Help others get creative?</b>
-			<h5 style="text-align:center;"> This is your chance!</h5>
+			<div class="cta-section">
+				<b>Create your own ysws? Get more flexibility? Help others get creative?</b>
+				<h5>This is your chance!</h5>
+			</div>
 
 			<p>We'll be helping guide you every step of the way along the path of building your very own workshops!</p>
 
@@ -31,10 +69,12 @@ import AboutHeroImage from '../assets/blog-placeholder-about.jpg';
 			If it goes successfully and you're intrested, we can help you scale it as a real Hack Club program for other clubs around the world to enjoy as well!
 			</p>
 
-				<p>One of the most important parts of this process is not being afraid to ask questions. All of us "mentors" were new to this as well in the recent past,
-					and we [add] so don't hesitate to reach out if you need any help along the way! </p>
+			<p>One of the most important parts of this process is not being afraid to ask questions. All of us "mentors" were new to this as well in the recent past,
+				and we [add] so don't hesitate to reach out if you need any help along the way! </p>
 
-			<div style="width:100%;height:500px;" data-fillout-id="rq9pAg4daCus" data-fillout-embed-type="standard" data-fillout-inherit-parameters data-fillout-dynamic-resize data-fillout-domain="forms.hackclub.com"></div><script src="https://server.fillout.com/embed/v1/"></script>
+			<div class="form-container">
+				<div style="width:100%;height:500px;" data-fillout-id="rq9pAg4daCus" data-fillout-embed-type="standard" data-fillout-inherit-parameters data-fillout-dynamic-resize data-fillout-domain="forms.hackclub.com"></div><script src="https://server.fillout.com/embed/v1/"></script>
+			</div>
 
 			<p>Whether you're a club leader looking to get your members shipping more projects,
 				interested in running a custom workshop funded by Hack Club,
